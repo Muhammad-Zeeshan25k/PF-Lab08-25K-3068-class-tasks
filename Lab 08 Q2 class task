@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main()
+{
+    int max = 0, x,y;
+    int matrix[3][4] = {{10, 22, 35, 41}, {50, 65, 73, 80}, {91, 10, 11, 12}};
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 4; j++)
+        {
+            printf("%2d\t", matrix[i][j]);
+        }
+        printf("\n");
+    }
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 4; j++)
+        {
+            if (matrix[i][j]>max){
+            max=matrix[i][j];
+            x=i;y=j;
+        }
+    }}
+    printf("The Greatest number is :%d\n",max);
+    printf("The position is :Row :%d column :%d\n",x,y);
+    printf("And the index is :Row :%d column :%d",x,y);
+    return 0;
+}
